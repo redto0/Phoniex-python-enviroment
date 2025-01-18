@@ -5,6 +5,7 @@ xpoints = []
 ypoints = []
 
 #opening the file
+# altertalively use /data/Datav1
 with open( "/home/alex/CLionProjects/untitled/Data/outPut.txt" , 'r' ) as file:
     #read by lines
     for line in file:
@@ -18,6 +19,7 @@ with open( "/home/alex/CLionProjects/untitled/Data/outPut.txt" , 'r' ) as file:
 # /home/alex/CLionProjects/untitled/Data/Datav4.txt
 coeffs = []
 inter = 0
+# altertalively use data/Polyv1
 with open( "/home/alex/CLionProjects/untitled/Data/Datav4.txt" , 'r' ) as file:
     #read by lines
     for line in file:
