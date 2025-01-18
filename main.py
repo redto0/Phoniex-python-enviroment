@@ -6,6 +6,8 @@ ypoints = []
 
 #opening the file
 # altertalively use /data/Datav1
+# "/home/alex/CLionProjects/untitled/Data/outPut.txt"
+# "/home/alex/PycharmProjects/PythonProject1/data/Datav1.txt"
 with open( "/home/alex/CLionProjects/untitled/Data/outPut.txt" , 'r' ) as file:
     #read by lines
     for line in file:
@@ -50,20 +52,20 @@ num_of_x = 200
 x_smooth = []
 for i in range(num_of_x):
     x_smooth.append(i/num_of_x * 550)
-print(max(x_smooth))
-print(min(x_smooth))
+#print(max(x_smooth))
+#print(min(x_smooth))
 # Calculate the y values for the polynomial
 #y_poly = []
 # coeffs = [2.81620753e-08, -3.66257507e-05S,  3.98234042e-01,  1.53898013e+02]
-print(type(coeffs))
-print("coeffs: ")
-print( coeffs)
+#print(type(coeffs))
+#print("coeffs: ")
+#print( coeffs)
 y_poly = []
 for x in x_smooth:
     y_poly.append(coeffs[0] * x ** 3 + coeffs[1] * x ** 2 + coeffs[2] * x ** 1 + coeffs[3] )
-
-print(max(coeffs))
-print(min(coeffs))
+print(y_poly)
+#print(max(coeffs))
+#print(min(coeffs))
 #y_poly = np.polyval(coeffs, x_smooth)
 
 # Plot original data
