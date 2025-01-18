@@ -51,14 +51,7 @@ x_smooth = np.linspace(min(xpoints), max(xpoints), num_of_x)
 # Calculate the y values for the polynomial
 y_poly = []
 coeffs = [2.81620753e-08, -3.66257507e-05,  3.98234042e-01,  1.53898013e+02]
-for x in x_smooth:
-    y  = 0;
-    pow = 3
-    for i in coeffs:
-        # print(i)
-        y += i * (x ** (pow))
-        pow -= 1
-    #y_poly.append(y)
+
 y_poly = np.polyval(coeffs, x_smooth)
 
 # Plot original data
